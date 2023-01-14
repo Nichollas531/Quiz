@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<html lang="en">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Quiz</title>
+    <meta name="description" content="useful">
+    <title>If you know me Quiz</title>
 </head>
 <body>
-    <h1></h1>
+    <header>
+        <img src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="ffc_primary" id="logo">
+        <h1>HTML/CSS Quiz</h1>
+        <nav>
+            <ul>
+                <li ><a href="info">INFO</a></li>
+                <li ><a href="html">HTML</a></li>
+                <li ><a href="css">CSS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="https://freecodecamp.org/practice-project/accessibility-quiz" method="post">
+            <section role="region" aria-labelledby="student-info">
+                <h2 id="student-info">Student Info</h2>
+            </section>
+            <section role="region" aria-labelledby="html-questions">
+                <h2 id="html-questions">HTML question</h2>
+
+            </section>
+            <section role="region" aria-labelledby="css-questions">
+                <h2 id="css-questions">CSS Questions</h2>
+
+            </section>
+        </form>
+    </main>
 </body>
 </html>
