@@ -9,21 +9,33 @@ header{
     height: 50px;
     background-color: #1b1b32;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
 }
 h1{
     color: #f1be32;
     font-size: min(5vw, 1.2em);
+    text-align: center;
 }
 nav >ul{
     display: flex;
     justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
 }
 h1,h2{
     font-family: Verdana, sans-serif;
 }
 h2{
     border-bottom: 4px solid #dfdfe2;
-
+    margin-top: 0;
+    padding-top: 60px;
 }
 .sr-only{
     position: absolute;
@@ -38,4 +50,41 @@ border: 0;
 }
 p::before{
     content: "Question #";
+}
+nav li{
+    color: #dfdfe2;
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    display: block;
+}
+li>a{
+    color: inherit;
+    text-decoration: none;
+}
+nav li:hover{
+    background-color: #dfdfe2;
+    color: #1b1b32;
+    cursor: pointer;
+}
+main{
+    padding-top: 30px;
+}
+section{
+    width: 80%;
+    margin: 0 auto 10px auto;
+    max-width: 600px;
+}
+.info{
+    padding: 10px 0 0 5px;
+}
+.formrow{
+    margin-top: 30px;
+    padding: 0 15px;
+}
+input{
+    font-size: 16px;
+}
+ .info input{
+    width: 50%;
+    text-align: left;
 }
